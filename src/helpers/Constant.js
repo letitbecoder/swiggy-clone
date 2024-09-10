@@ -44,10 +44,7 @@ export const footer_content = [
     data: [
       "About",
       "Careers",
-      "Team",
-      "Chef-2-Door One",
-      "Chef-2-Door Instamart",
-      "Chef-2-Door Genie",
+      "Team"
     ],
   },
   {

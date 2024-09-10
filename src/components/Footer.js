@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import footer_logo from "../assets/logo.jpeg";
+import footer_logo from "../assets/logoooo.png";
 import { footer_content } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaRegCopyright } from "react-icons/fa";
@@ -37,7 +37,7 @@ const Footer = ({ footerCities }) => {
                 }}
               />
             </div>
-            <h1 className="truncate">© 2024 Bundl Technologies Pvt. Ltd</h1>
+            <h1 className="truncate"></h1>
           </div>
           {footer_content.map((x, index) => (
             <div key={index} className={`${index === 2 ? "col-start-3 " : ""}`}>
@@ -96,9 +96,9 @@ const Footer = ({ footerCities }) => {
         </div>
       </div>
       <div className="flex flex-col w-full items-center justify-center bg-[#110705] text-white ">
-        <p className="py-2">
-          Made with 💓 by Divu, Let's connect beyond the Plate
-        </p>
+        {/* <p className="py-2">
+          Made with
+        </p> */}
         <div className="flex justify-between items-center gap-8 py-4">
           <a>
             <FontAwesomeIcon
@@ -115,10 +115,6 @@ const Footer = ({ footerCities }) => {
           <a className="text-3xl hover:text-[#d33592]">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-        </div>
-        <div className="flex justify-center items-center py-2 mb-12 gap-2">
-          <FaRegCopyright />
-          <p>2023 CHEF-2-DOOR</p>
         </div>
       </div>
     </>

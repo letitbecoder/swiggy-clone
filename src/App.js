@@ -10,7 +10,6 @@ import SignIn from "./components/SignIn";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import MenuSearch from "./components/MenuSearch";
-const Help = lazy(() => import("./components/Help"));
 const AppLayout = () => {
   return (
     <Provider store={store}>
@@ -37,15 +36,6 @@ const appRouter = createBrowserRouter([
         path: "search",
         element: <Search />,
       },
-      {
-        path: "help",
-        element: (
-          <Suspense>
-            <Help />
-          </Suspense>
-        ),
-      },
-
       {
         path: "profile",
         element: <SignIn />,
